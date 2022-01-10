@@ -160,7 +160,7 @@ exports.deleteProduct = (req, res) => {
 exports.allProducts = (req, res) => {
     let sortBy = req.query.sortBy ? req.query.sortBy : '_id';
     let order = req.query.order ? req.query.order : "asc"; // a-z not z-a il prend en consédiration l'alhabétique de les mots les produits
-    let limit = req.query.limit ? parseInt(req.query.limit) : 6;
+    let limit = req.query.limit ? parseInt(req.query.limit) : 50;
     
     let query = {}
 
